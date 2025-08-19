@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOTHEARO - Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <style>
+        /*  */
+    </style>
+</head>
+
+<body id="home" data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
+    <!-- Navigation Menu -->
+
+    <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-code me-2"></i>KORNG<span>SOTHEARO</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home"><i class="fas fa-home me-1"></i> Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about"><i class="fas fa-user me-1"></i> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills"><i class="fas fa-cogs me-1"></i> Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experiences"><i class="fas fa-briefcase me-1"></i> Experience</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="particles" id="particles"></div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="profile-container">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                                class="profile-image" alt="SOTHEARO - Developer">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                        <div class="hero-content">
+                            <h1 class="hero-title fw-bold mb-3" style="font-size: 2.2rem; color: #a29f9f;">
+                                Hi, I'm <span style="color:#a29f9f;">SOTHEARO</span>
+                            </h1>
+                            <p class="hero-subtitle mb-3" style="font-size: 1.3rem; color: #ffffff;">
+                                Full Stack Developer | UI/UX Enthusiast
+                            </p>
+                            <p class="hero-description mb-4"
+                                style="font-size: 1.05rem; color: #a09c9c; line-height: 1.7;">
+                                I craft modern, scalable web and mobile applications with clean code and
+                                elegant design. Passionate about building intuitive user experiences and
+                                delivering solutions that truly make an impact.
+                            </p>
+                            <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                                <a href="#contact" class="btn btn-primary btn-lg shadow-sm">
+                                    <i class="fas fa-paper-plane me-2"></i> Hire Me
+                                </a>
+                                <a href="#" class="btn btn-outline-dark btn-lg shadow-sm">
+                                    <i class="fas fa-download me-2"></i> Download CV
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Preview -->
+        <section class="content-section bg-light" id="skills">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">My Skills</h2>
+
+                <!-- Tabs Navigation -->
+                <div class="row justify-content-center mb-4">
+                    <div class="col-auto">
+                        <ul class="nav nav-tabs" id="skillsTab" role="tablist">
+                            <li class="nav-item" role="presentation" style="margin-right: 10px;">
+                                <button class="nav-link active" id="all-skills-tab" data-bs-toggle="tab"
+                                    data-bs-target="#all-skills" type="button" role="tab">
+                                    All Skills
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation" style="margin-right: 10px;">
+                                <button class="nav-link" id="frontend-tab" data-bs-toggle="tab"
+                                    data-bs-target="#frontend" type="button" role="tab">
+                                    Frontend
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation" style="margin-right: 10px;">
+                                <button class="nav-link" id="backend-tab" data-bs-toggle="tab" data-bs-target="#backend"
+                                    type="button" role="tab">
+                                    Backend
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="database-tab" data-bs-toggle="tab"
+                                    data-bs-target="#database" type="button" role="tab">
+                                    Database
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tabs Content -->
+                <div class="tab-content" id="skillsTabContent">
+
+                    <!-- All Skills -->
+                    <div class="tab-pane fade show active" id="all-skills" role="tabpanel">
+                        <div class="row g-3">
+                            <!-- Frontend -->
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fab fa-js-square fa-2x mb-2 text-warning"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">JQuery</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fab fa-js fa-2x mb-2 text-warning"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">JavaScript</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fab fa-bootstrap fa-2x mb-2 text-primary"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">Bootstrap</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fab fa-html5 fa-2x mb-2 text-danger"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">HTML</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fab fa-css3-alt fa-2x mb-2 text-primary"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">CSS</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Backend -->
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fab fa-python fa-2x mb-2 text-success"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">Django</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fab fa-php fa-2x mb-2 text-indigo"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">PHP</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fas fa-cogs fa-2x mb-2 text-primary"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">ASP.NET</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Database -->
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fas fa-database fa-2x mb-2 text-primary"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">SQL Server</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fas fa-database fa-2x mb-2 text-blue"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">MySQL</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fas fa-database fa-2x mb-2 text-red"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">Oracle</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fas fa-fire fa-2x mb-2 text-orange"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">Firebase</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fab fa-kotlin fa-2x mb-2 text-purple"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">Kotlin</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <div class="card-body p-2">
+                                        <i class="fab fa-android text-success fa-2x"></i>
+                                        <h6 class="card-title mb-0">Android</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="tab-pane fade" id="frontend" role="tabpanel">
+                        <div class="row g-3">
+                            <!-- Repeat only frontend cards -->
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fab fa-js-square fa-2x mb-2 text-warning"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">JQuery</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fab fa-js fa-2x mb-2 text-warning"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">JavaScript</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fab fa-bootstrap fa-2x mb-2 text-primary"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">Bootstrap</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fab fa-html5 fa-2x mb-2 text-danger"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">HTML</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fab fa-css3-alt fa-2x mb-2 text-primary"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">CSS</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="tab-pane fade" id="backend" role="tabpanel">
+                        <div class="row g-3">
+                            <!-- Repeat only backend cards -->
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fab fa-python fa-2x mb-2 text-success"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">Django</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fab fa-php fa-2x mb-2 text-indigo"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">PHP</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fas fa-cogs fa-2x mb-2 text-primary"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">ASP.NET</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="tab-pane fade" id="database" role="tabpanel">
+                        <div class="row g-3">
+                            <!-- Repeat only database cards -->
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fas fa-database fa-2x mb-2 text-primary"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">SQL Server</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fas fa-database fa-2x mb-2 text-blue"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">MySQL</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fas fa-database fa-2x mb-2 text-red"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">Oracle</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6">
+                                <div class="card text-center p-3 h-100">
+                                    <i class="fas fa-fire fa-2x mb-2 text-orange"></i>
+                                    <div class="card-body p-2">
+                                        <h6 class="card-title mb-0">Firebase</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- about -->
+
+
+        <section class="content-section bg-light py-5" id="about">
+            <div class="container">
+                <h2 class="section-title text-center mb-5"
+                    style="color:#343a40; font-weight:700; font-family:'Poppins', sans-serif;">
+                    About Me
+                </h2>
+
+                <div class="row align-items-center">
+                    <!-- Profile Image -->
+                    <div class="col-lg-5 text-center mb-4 mb-lg-0">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=774&q=80"
+                            class="rounded-circle shadow-lg img-fluid" alt="SOTHEARO - Developer"
+                            style="max-width: 250px; border: 6px solid #fff; position: relative; top: -20px;">
+                    </div>
+
+                    <!-- About Content -->
+                    <div class="col-lg-7">
+                        <h3 class="mb-3" style="color:#212529; font-weight:700; font-family:'Poppins', sans-serif;">
+                            Hello, I'm Sothearo!
+                        </h3>
+
+                        <p class="text-muted mb-3" style="font-size: 1.05rem; line-height:1.8;">
+                            I am a <strong>Year 3 student</strong> at <strong>ACLEDA University of Business</strong>
+                            with a
+                            passion for
+                            building impactful digital solutions and modern applications.
+                        </p>
+
+                        <p class="text-muted mb-4" style="line-height:1.8;">
+                            I have practical experience in developing <strong>Point of Sale (POS) systems</strong> with
+                            advanced reporting features
+                            and completed multiple academic projects, including a
+                            <strong>full-stack e-commerce website</strong> using Django.
+                        </p>
+
+                        <!-- Core Skills -->
+                        <div class="mb-4">
+                            <h5 class="fw-bold mb-3" style="color:#343a40; font-family:'Poppins', sans-serif;">Core
+                                Skills
+                            </h5>
+                            <ul class="list-unstyled text-muted" style="line-height:1.8;">
+                                <li><i class="fas fa-code text-primary me-2"></i> Frontend: HTML, CSS, Bootstrap,
+                                    JavaScript, jQuery</li>
+                                <li><i class="fas fa-mobile-alt text-success me-2"></i> Mobile: Android (Kotlin)</li>
+                                <li><i class="fas fa-server text-warning me-2"></i> Backend: Django, ASP.NET (C#), PHP,
+                                    Java
+                                </li>
+                                <li><i class="fas fa-database text-danger me-2"></i> Databases: SQL Server, MySQL,
+                                    Oracle,
+                                    Firebase</li>
+                            </ul>
+                        </div>
+
+                        <!-- Experience -->
+                        <div class="mb-4">
+                            <h5 class="fw-bold mb-3" style="color:#343a40; font-family:'Poppins', sans-serif;">
+                                Experience
+                            </h5>
+
+                            <p class="text-muted mb-2">
+                                <i class="fas fa-briefcase text-primary me-2"></i>
+                                Intern at ACLEDA School – Built a POS System using C# ASP.NET and SQL Server with
+                                advanced
+                                reporting modules.
+                            </p>
+
+                            <p class="text-muted mb-2">
+                                <i class="fas fa-laptop-code text-success me-2"></i>
+                                Developed a full-stack E-commerce website using Django, featuring cart, checkout, and QR
+                                code payment integration.
+                            </p>
+
+                            <p class="text-muted mb-2">
+                                <i class="fas fa-mobile-alt text-warning me-2"></i>
+                                Built an Android application called <strong>Career App</strong> using Kotlin and
+                                Firebase,
+                                enabling users to find jobs and companies to post vacancies with admin control.
+                            </p>
+                        </div>
+
+
+                        <p class="text-muted" style="line-height:1.8;">
+                            Currently, I’m focused on advanced Django development, REST API design, and building
+                            scalable,
+                            secure web systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <!-- project and experinces -->
+
+
+        <section class="content-section py-5" id="experiences" style="background: #f8f9fa;">
+            <div class="container">
+                <h2 class="section-title text-center mb-5" style="color: #343a40;">Experiences & Projects</h2>
+
+                <!-- Tabs Navigation -->
+                <ul class="nav nav-tabs justify-content-center mb-4 border-0" id="experiencesTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active text-dark fw-semibold" id="pos-tab" data-bs-toggle="tab"
+                            data-bs-target="#pos" type="button" role="tab">POS Systems</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-dark fw-semibold" id="ecommus-tab" data-bs-toggle="tab"
+                            data-bs-target="#ecommus" type="button" role="tab">Ecommus</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-dark fw-semibold" id="maintenance-tab" data-bs-toggle="tab"
+                            data-bs-target="#maintenance" type="button" role="tab">Maintenance & Tech</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-dark fw-semibold" id="learning-tab" data-bs-toggle="tab"
+                            data-bs-target="#learning" type="button" role="tab">Learning & Projects</button>
+                    </li>
+                </ul>
+
+                <!-- Tabs Content -->
+                <div class="tab-content" id="experiencesTabContent">
+                    <!-- POS Systems -->
+                    <div class="tab-pane fade show active" id="pos" role="tabpanel">
+                        <div class="experience-card d-flex align-items-start bg-white shadow-sm rounded p-4">
+                            <i class="fas fa-briefcase fa-2x text-primary me-3"></i>
+                            <div>
+                                <h5 class="mb-2 text-dark">POS Systems (Internship at ACLEDA School)</h5>
+                                <p class="mb-2 text-muted">
+                                    Developed a <strong>Point of Sale (POS)</strong> system with advanced reporting
+                                    features
+                                    during an internship at <strong>ACLEDA School</strong>.
+                                </p>
+                                <p class="mb-0 text-muted">
+                                    <strong>Technologies:</strong> C# (ASP.NET), SQL Server, Bootstrap.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Ecommus Project -->
+                    <div class="tab-pane fade" id="ecommus" role="tabpanel">
+                        <div class="experience-card d-flex align-items-start bg-white shadow-sm rounded p-4">
+                            <i class="fas fa-laptop-code fa-2x text-success me-3"></i>
+                            <div>
+                                <h5 class="mb-2 text-dark">Ecommus Website (End-Semester School Project)</h5>
+                                <p class="mb-2 text-muted">
+                                    Developed a full-stack <strong>e-commerce website</strong> for the school project.
+                                    Features include product listing, shopping cart, checkout, and QR payment
+                                    integration.
+                                </p>
+                                <p class="mb-0 text-muted">
+                                    <strong>Technologies:</strong> Python (Django), HTML, CSS, JavaScript, Bootstrap.
+                                </p>
+                                <a href="https://korngsothearo.pythonanywhere.com/" target="_blank"
+                                    class="experience-link text-decoration-underline text-primary">
+                                    View Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Maintenance & Tech Stack -->
+                    <div class="tab-pane fade" id="maintenance" role="tabpanel">
+                        <div class="experience-card d-flex align-items-start bg-white shadow-sm rounded p-4">
+                            <i class="fas fa-tools fa-2x text-danger me-3"></i>
+                            <div>
+                                <h5 class="mb-2 text-dark">Maintenance & Technologies</h5>
+                                <p class="mb-2 text-muted">
+                                    Worked on maintaining school projects and applying multiple technologies across
+                                    different domains.
+                                </p>
+                                <p class="mb-0 text-muted">
+                                    <strong>Skills & Technologies:</strong>
+                                    C#, Java, Django (with REST API), Android (Kotlin), ASP.NET, HTML, CSS, Bootstrap,
+                                    JavaScript, jQuery, Firebase, SQL Server, MySQL, Oracle, PHP.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Learning & Projects -->
+                    <div class="tab-pane fade" id="learning" role="tabpanel">
+                        <div class="experience-card d-flex align-items-start bg-white shadow-sm rounded p-4">
+                            <i class="fas fa-lightbulb fa-2x text-warning me-3"></i>
+                            <div>
+                                <h5 class="mb-2 text-dark">Learning & Projects</h5>
+                                <p class="mb-2 text-muted">
+                                    Continuously improving my skills by exploring modern technologies and frameworks.
+                                </p>
+                                <p class="mb-0 text-muted">
+                                    Currently focusing on building innovative projects and applying best practices to
+                                    solve
+                                    real-world challenges.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <style>
+            /* Card hover animation */
+            .experience-card {
+                transition: all 0.3s ease-in-out;
+            }
+
+            .experience-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            }
+
+            /* Tab active style */
+            .nav-tabs .nav-link.active {
+                color: #0d6efd !important;
+                border-bottom: 3px solid #0d6efd !important;
+                background: transparent !important;
+            }
+
+            /* Professional link styling */
+            .experience-link {
+                text-decoration: underline;
+                color: #0d6efd;
+                font-weight: 500;
+            }
+
+            .experience-link:hover {
+                color: #0a58ca;
+                text-decoration: none;
+            }
+        </style>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Footer -->
+        <footer class="bg-dark text-light py-4">
+            <div class="container text-center">
+                <div class="social-links mb-3">
+                    <a href="https://github.com/KorngSothearo7198?tab=repositories" target="_blank"
+                        class="text-light mx-2" style="font-size: 1.5rem;">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61577712952201" target="_blank"
+                        class="text-light mx-2" style="font-size: 1.5rem;">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://t.me/yourtelegram" target="_blank" class="text-light mx-2"
+                        style="font-size: 1.5rem;">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@rocoder_kh" target="_blank" class="text-light mx-2"
+                        style="font-size: 1.5rem;">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+                <p class="mb-0">&copy; 2023 <strong>SOTHEARO</strong>. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+
+</html>
