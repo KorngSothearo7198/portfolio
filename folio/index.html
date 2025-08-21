@@ -18,387 +18,478 @@
 
 
     <style>
-        /*  */
+        /* Global Dark Theme */
+        body {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+        }
+
+        /* Links */
+        a,
+        a.nav-link {
+            color: #00d8ff !important;
+        }
+
+        a:hover,
+        a.nav-link:hover {
+            color: #00a3cc !important;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #111111 !important;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: #000000 !important;
+        }
+
+        .hero-title,
+        .hero-subtitle,
+        .hero-description {
+            color: #ffffff !important;
+        }
+
+        /* Cards (Skills & Experiences) */
+        .skill-card,
+        .experience-card {
+            background-color: #111111 !important;
+            color: #ffffff !important;
+            border-color: #333333 !important;
+        }
+
+        /* Card titles and text */
+        .skill-card h6,
+        .experience-card h5,
+        .experience-card p {
+            color: #ffffff !important;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background-color: #00d8ff !important;
+            border-color: #00a3cc !important;
+            color: #000 !important;
+        }
+
+        .btn-outline-light {
+            color: #ffffff !important;
+            border-color: #ffffff !important;
+        }
+
+        .btn-outline-light:hover {
+            background-color: #ffffff !important;
+            color: #000 !important;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111111 !important;
+            color: #ffffff !important;
+        }
     </style>
 </head>
 
 <body id="home" data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
     <!-- Navigation Menu -->
 
-    
 
-    <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
 
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <i class="fas fa-code me-2"></i>KORNG<span>SOTHEARO</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home"><i class="fas fa-home me-1"></i> Profile</a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-code me-2"></i>KORNG<span>SOTHEARO</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home"><i class="fas fa-home me-1"></i> Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><i class="fas fa-user me-1"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills"><i class="fas fa-cogs me-1"></i> Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiences"><i class="fas fa-briefcase me-1"></i> Experience</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5 mt-5" id="home" style="position: relative;">
+        <div class="particles" id="particles"></div>
+
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Profile Image -->
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0 text-center">
+                    <div class="profile-container">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                            class="profile-image rounded-circle shadow-lg" alt="SOTHEARO - Developer"
+                            style="max-width: 300px;">
+                    </div>
+                </div>
+
+                <!-- Hero Content -->
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class="hero-content">
+                        <h1 class="hero-title fw-bold mb-3" style="font-size: 2.5rem; color: #ffffff;">
+                            Hi, I'm <span style="color:#00d8ff;">SOTHEARO</span>
+                        </h1>
+
+                        <p class="hero-subtitle mb-3" style="font-size: 1.3rem; color: #cfd8dc;">
+                            Full Stack Developer | UI/UX Enthusiast
+                        </p>
+
+                        <p class="hero-description mb-4" style="font-size: 1.05rem; color: #b0b0b0; line-height: 1.7;">
+                            I craft modern, scalable web and mobile applications with clean code and
+                            elegant design. Passionate about building intuitive user experiences and
+                            delivering solutions that truly make an impact.
+                        </p>
+
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                            <a href="#contact" class="btn btn-primary btn-lg shadow-sm hero-btn">
+                                <i class="fas fa-paper-plane me-2"></i> Hire Me
+                            </a>
+                            <a href="#" class="btn btn-outline-light btn-lg shadow-sm hero-btn">
+                                <i class="fas fa-download me-2"></i> Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Hero Section */
+        .hero-section {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Profile Image */
+        .profile-container img {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Buttons */
+        .hero-btn {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .hero-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Particles (optional background effect) */
+        #particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .hero-section .container {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+
+
+    <!-- Skills Preview -->
+    <section class="content-section py-5" id="skills" style="background: #000000;">
+        <div class="container">
+            <h2 class="section-title text-center text-white mb-5"></h2>
+
+            <!-- Tabs Navigation -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-auto">
+                    <ul class="nav nav-tabs" id="skillsTab" role="tablist">
+                        <li class="nav-item" role="presentation" style="background-color: #ffffff; border-radius: 5px;">
+                            <button class="nav-link active custom-tab" id="all-skills-tab" data-bs-toggle="tab"
+                                data-bs-target="#all-skills" type="button" role="tab">
+                                Tech Stack
+                            </button>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about"><i class="fas fa-user me-1"></i> About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills"><i class="fas fa-cogs me-1"></i> Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experiences"><i class="fas fa-briefcase me-1"></i> Experience</a>
+                        <li class="nav-item" role="presentation" style="background-color: #ffffff;border-radius: 5px;">
+                            <button class="nav-link custom-tab" id="gpa-tab" data-bs-toggle="tab" data-bs-target="#gpa"
+                                type="button" role="tab">
+                                GPA
+                            </button>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
 
 
-        <!-- Hero Section -->
-        <section class="hero-section py-5" id="home" style="position: relative; background: #1e1e2f;">
-            <div class="particles" id="particles"></div>
 
-            <div class="container">
-                <div class="row align-items-center">
 
-                    <!-- Profile Image -->
-                    <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0 text-center">
-                        <div class="profile-container">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
-                                class="profile-image rounded-circle shadow-lg" alt="SOTHEARO - Developer"
-                                style="max-width: 300px;">
+            <!-- Tabs Content -->
+            <div class="tab-content" id="skillsTabContent">
+
+                <!-- All Skills -->
+                <div class="tab-pane fade show active" id="all-skills" role="tabpanel">
+                    <div class="skills-grid">
+
+                        <!-- Frontend -->
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #ffffff;">
+                            <i class="fab fa-js fa-2x text-warning mb-2"></i>
+                            <h6 class="mb-0">JavaScript</h6>
                         </div>
-                    </div>
 
-                    <!-- Hero Content -->
-                    <div class="col-lg-6 order-lg-1 text-center text-lg-start">
-                        <div class="hero-content">
-                            <h1 class="hero-title fw-bold mb-3" style="font-size: 2.5rem; color: #ffffff;">
-                                Hi, I'm <span style="color:#00d8ff;">SOTHEARO</span>
-                            </h1>
-
-                            <p class="hero-subtitle mb-3" style="font-size: 1.3rem; color: #cfd8dc;">
-                                Full Stack Developer | UI/UX Enthusiast
-                            </p>
-
-                            <p class="hero-description mb-4"
-                                style="font-size: 1.05rem; color: #b0b0b0; line-height: 1.7;">
-                                I craft modern, scalable web and mobile applications with clean code and
-                                elegant design. Passionate about building intuitive user experiences and
-                                delivering solutions that truly make an impact.
-                            </p>
-
-                            <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
-                                <a href="#contact" class="btn btn-primary btn-lg shadow-sm hero-btn">
-                                    <i class="fas fa-paper-plane me-2"></i> Hire Me
-                                </a>
-                                <a href="#" class="btn btn-outline-light btn-lg shadow-sm hero-btn">
-                                    <i class="fas fa-download me-2"></i> Download CV
-                                </a>
-                            </div>
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #000;">
+                            <i class="devicon-jquery-plain colored fa-2x mb-2"></i>
+                            <h6 class="mb-0">jQuery</h6>
                         </div>
-                    </div>
 
-                </div>
-            </div>
-        </section>
-
-        <style>
-            /* Hero Section */
-            .hero-section {
-                min-height: 80vh;
-                display: flex;
-                align-items: center;
-                position: relative;
-            }
-
-            /* Profile Image */
-            .profile-container img {
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-            }
-
-            .profile-container img:hover {
-                transform: scale(1.05);
-                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-            }
-
-            /* Buttons */
-            .hero-btn {
-                transition: transform 0.2s ease, box-shadow 0.2s ease;
-            }
-
-            .hero-btn:hover {
-                transform: translateY(-3px);
-                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-            }
-
-            /* Particles (optional background effect) */
-            #particles {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: 0;
-            }
-
-            .hero-section .container {
-                position: relative;
-                z-index: 1;
-            }
-        </style>
-
-
-        <!-- Skills Preview -->
-        <section class="content-section bg-light py-5" id="skills">
-            <div class="container">
-                <h2 class="section-title text-center mb-5">My Skills</h2>
-
-                <!-- Tabs Navigation -->
-                <div class="row justify-content-center mb-4">
-                    <div class="col-auto">
-                        <ul class="nav nav-tabs" id="skillsTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="all-skills-tab" data-bs-toggle="tab"
-                                    data-bs-target="#all-skills" type="button" role="tab">
-                                    Tech Stack
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="gpa-tab" data-bs-toggle="tab" data-bs-target="#gpa"
-                                    type="button" role="tab">
-                                    GPA
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Tabs Content -->
-                <div class="tab-content" id="skillsTabContent">
-
-                    <!-- All Skills -->
-                    <div class="tab-pane fade show active" id="all-skills" role="tabpanel">
-                        <div class="skills-grid">
-
-                            <!-- Frontend -->
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="fab fa-js fa-2x text-warning mb-2"></i>
-                                <h6 class="mb-0">JavaScript</h6>
-                            </div>
-
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="fab fa-jquery fa-2x text-primary mb-2"></i>
-                                <h6 class="mb-0">jQuery</h6>
-                            </div>
-
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="fab fa-bootstrap fa-2x text-primary mb-2"></i>
-                                <h6 class="mb-0">Bootstrap</h6>
-                            </div>
-
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="fab fa-html5 fa-2x text-danger mb-2"></i>
-                                <h6 class="mb-0">HTML5</h6>
-                            </div>
-
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="fab fa-css3-alt fa-2x text-primary mb-2"></i>
-                                <h6 class="mb-0">CSS3</h6>
-                            </div>
-
-                            <!-- Backend -->
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="fab fa-python fa-2x text-success mb-2"></i>
-                                <h6 class="mb-0">Django</h6>
-                            </div>
-
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="fab fa-php fa-2x text-indigo mb-2"></i>
-                                <h6 class="mb-0">PHP</h6>
-                            </div>
-
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="fas fa-cogs fa-2x text-dark mb-2"></i>
-                                <h6 class="mb-0">ASP.NET</h6>
-                            </div>
-
-                            <!-- Database -->
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="devicon-microsoftsqlserver-plain colored fa-2x mb-2"></i>
-                                <h6 class="mb-0">SQL Server</h6>
-                            </div>
-
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="devicon-mysql-plain colored fa-2x mb-2"></i>
-                                <h6 class="mb-0">MySQL</h6>
-                            </div>
-
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="devicon-oracle-original colored fa-2x mb-2"></i>
-                                <h6 class="mb-0">Oracle</h6>
-                            </div>
-
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="devicon-firebase-plain colored fa-2x mb-2"></i>
-                                <h6 class="mb-0">Firebase</h6>
-                            </div>
-
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="devicon-kotlin-plain colored fa-2x mb-2"></i>
-                                <h6 class="mb-0">Kotlin</h6>
-                            </div>
-
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="fab fa-android fa-2x text-success mb-2"></i>
-                                <h6 class="mb-0">Android</h6>
-                            </div>
-
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="fas fa-paint-brush fa-2x text-info mb-2"></i>
-                                <h6 class="mb-0">UX/UI</h6>
-                            </div>
-
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="fab fa-git-alt fa-2x text-danger mb-2"></i>
-                                <h6 class="mb-0">Git</h6>
-                            </div>
-
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="devicon-flutter-plain colored fa-2x mb-2"></i>
-                                <h6 class="mb-0">Flutter</h6>
-                            </div>
-
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="devicon-dart-plain colored fa-2x mb-2"></i>
-                                <h6 class="mb-0">Dart</h6>
-                            </div>
-
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="devicon-csharp-plain colored fa-2x mb-2"></i>
-                                <h6 class="mb-0">C#</h6>
-                            </div>
-
-                            <div class="skill-card card text-center p-3 h-100">
-                                <i class="devicon-java-plain colored fa-2x mb-2"></i>
-                                <h6 class="mb-0">Java</h6>
-                            </div>
-
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #ffffff;">
+                            <i class="fab fa-bootstrap fa-2x text-primary mb-2"></i>
+                            <h6 class="mb-0">Bootstrap</h6>
                         </div>
+
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #ffffff;">
+                            <i class="fab fa-html5 fa-2x text-danger mb-2"></i>
+                            <h6 class="mb-0">HTML5</h6>
+                        </div>
+
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #ffffff;">
+                            <i class="fab fa-css3-alt fa-2x text-primary mb-2"></i>
+                            <h6 class="mb-0">CSS</h6>
+                        </div>
+
+                        <!-- Backend -->
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #ffffff;">
+                            <i class="fab fa-python fa-2x text-success mb-2"></i>
+                            <h6 class="mb-0">Django</h6>
+                        </div>
+
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #ffffff;">
+                            <i class="devicon-php-plain colored fa-2x"></i>
+                            <h6 class="mb-0">PHP</h6>
+                        </div>
+
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #ffffff;">
+                            <i class="devicon-dot-net-plain colored fa-2x"></i>
+                            <h6 class="mb-0">ASP.NET</h6>
+                        </div>
+
+                        <!-- Database -->
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #ffffff;">
+                            <i class="devicon-microsoftsqlserver-plain colored fa-2x mb-2"></i>
+                            <h6 class="mb-0">SQL Server</h6>
+                        </div>
+
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #ffffff;">
+                            <i class="devicon-mysql-plain colored fa-2x mb-2"></i>
+                            <h6 class="mb-0">MySQL</h6>
+                        </div>
+
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #ffffff;">
+                            <i class="devicon-oracle-original colored fa-2x"></i>
+                            <h6 class="mb-0">Oracle</h6>
+                        </div>
+
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #000;">
+                            <i class="devicon-firebase-plain colored fa-2x mb-2"></i>
+                            <h6 class="mb-0">Firebase</h6>
+                        </div>
+
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #ffffff;">
+                            <i class="devicon-kotlin-plain colored fa-2x mb-2"></i>
+                            <h6 class="mb-0">Kotlin</h6>
+                        </div>
+
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #ffffff;">
+                            <i class="fab fa-android fa-2x text-success mb-2"></i>
+                            <h6 class="mb-0">Android</h6>
+                        </div>
+
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #ffffff;">
+                            <i class="fab fa-figma fa-2x" style="color:#F24E1E;"></i>
+                            <h6 class="mb-0">UX/UI</h6>
+                        </div>
+
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #ffffff;">
+                            <i class="fab fa-git-alt fa-2x text-danger mb-2"></i>
+                            <h6 class="mb-0">Git</h6>
+                        </div>
+
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #ffffff;">
+                            <i class="devicon-flutter-plain colored fa-2x mb-2"></i>
+                            <h6 class="mb-0">Flutter</h6>
+                        </div>
+
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #ffffff;">
+                            <i class="devicon-dart-plain colored fa-2x mb-2"></i>
+                            <h6 class="mb-0">Dart</h6>
+                        </div>
+
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #ffffff;">
+                            <i class="devicon-csharp-plain colored fa-2x mb-2"></i>
+                            <h6 class="mb-0">C#</h6>
+                        </div>
+
+                        <div class="skill-card card text-center p-3 h-100" style="border: 3px solid #ffffff;">
+                            <i class="devicon-java-plain colored fa-2x mb-2"></i>
+                            <h6 class="mb-0">Java</h6>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
-        <style>
+    <style>
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+        }
+
+        @media (max-width: 992px) {
             .skills-grid {
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
-                gap: 1rem;
+                grid-template-columns: repeat(3, 1fr);
             }
+        }
 
-            @media (max-width: 992px) {
-                .skills-grid {
-                    grid-template-columns: repeat(3, 1fr);
-                }
+        @media (max-width: 576px) {
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
-
-            @media (max-width: 576px) {
-                .skills-grid {
-                    grid-template-columns: repeat(2, 1fr);
-                }
-            }
+        }
 
 
-            .skill-card {
-                border: none;
-                border-radius: 12px;
-                background: #fff;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-                cursor: pointer;
-            }
+        .skill-card {
+            border: none;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
 
-            .skill-card:hover {
-                transform: scale(1.08);
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-            }
+        .skill-card:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
 
-            .skill-card i {
-                font-size: 2.5rem;
-            }
-        </style>
+        .skill-card i {
+            font-size: 2.5rem;
+        }
+    </style>
 
-        <!-- GPA Section -->
+    <!-- GPA Section -->
 
-        <!-- Tabs Content -->
-        <div class="tab-content" id="skillsTabContent">
-            <!-- Tech Stack tab content -->
-            <div class="tab-pane fade show active" id="all-skills" role="tabpanel">
-                <!-- Your Tech Stack cards here -->
-            </div>
+    <!-- Tabs Content -->
+    <div class="tab-content" id="skillsTabContent" style="background: #000000;">
+        <!-- Tech Stack tab content -->
+        <div class="tab-pane fade show active" id="all-skills" role="tabpanel">
+            <!-- Your Tech Stack cards here -->
+        </div>
 
-            <!-- GPA tab content -->
-            <div class="tab-pane fade" id="gpa" role="tabpanel" style="padding: 10px;">
-                <div class="row g-4">
-                    <!-- Year 1, Semester 1 -->
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="experience-card bg-white shadow-sm rounded p-3 text-center">
-                            <img src="/images/01.png" alt="Year 1 Semester 1 GPA" class="img-fluid rounded mb-3"
-                                style="max-height:200px;">
-                            <h5 class="mb-2 text-dark">Year 1 - Semester 1</h5>
-                            <p class="mb-0 text-muted">GPA summary for Year 1, Semester 1.</p>
-                        </div>
+        <!-- GPA tab content -->
+        <div class="tab-pane fade" id="gpa" role="tabpanel" style="padding: 10px;">
+            <div class="row g-4">
+                <!-- Year 1, Semester 1 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="experience-card bg-white shadow-sm rounded p-3 text-center">
+                        <img src="/images/01.png" alt="Year 1 Semester 1 GPA" class="img-fluid rounded mb-3"
+                            style="max-height:200px;">
+                        <h5 class="mb-2 text-dark">Year 1 - Semester 1</h5>
+                        <p class="mb-0 text-muted">GPA summary for Year 1, Semester 1.</p>
                     </div>
+                </div>
 
-                    <!-- Year 1, Semester 2 -->
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="experience-card bg-white shadow-sm rounded p-3 text-center">
-                            <img src="/images/02.png" alt="Year 1 Semester 2 GPA" class="img-fluid rounded mb-3"
-                                style="max-height:200px;">
-                            <h5 class="mb-2 text-dark">Year 1 - Semester 2</h5>
-                            <p class="mb-0 text-muted">GPA summary for Year 1, Semester 2.</p>
-                        </div>
+                <!-- Year 1, Semester 2 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="experience-card bg-white shadow-sm rounded p-3 text-center">
+                        <img src="/images/02.png" alt="Year 1 Semester 2 GPA" class="img-fluid rounded mb-3"
+                            style="max-height:200px;">
+                        <h5 class="mb-2 text-dark">Year 1 - Semester 2</h5>
+                        <p class="mb-0 text-muted">GPA summary for Year 1, Semester 2.</p>
                     </div>
+                </div>
 
-                    <!-- Year 2, Semester 1 -->
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="experience-card bg-white shadow-sm rounded p-3 text-center">
-                            <img src="/images/03.png" alt="Year 2 Semester 1 GPA" class="img-fluid rounded mb-3"
-                                style="max-height:200px;">
-                            <h5 class="mb-2 text-dark">Year 2 - Semester 1</h5>
-                            <p class="mb-0 text-muted">GPA summary for Year 2, Semester 1.</p>
-                        </div>
+                <!-- Year 2, Semester 1 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="experience-card bg-white shadow-sm rounded p-3 text-center">
+                        <img src="/images/03.png" alt="Year 2 Semester 1 GPA" class="img-fluid rounded mb-3"
+                            style="max-height:200px;">
+                        <h5 class="mb-2 text-dark">Year 2 - Semester 1</h5>
+                        <p class="mb-0 text-muted">GPA summary for Year 2, Semester 1.</p>
                     </div>
+                </div>
 
-                    <!-- Placeholder / Coming Soon -->
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="experience-card bg-white shadow-sm rounded p-3 text-center">
-                            <h5 class="mb-2 text-dark">Coming Soon</h5>
-                            <p class="mb-0 text-muted">GPA details will be added soon.</p>
-                        </div>
+                <!-- Placeholder / Coming Soon -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="experience-card bg-white shadow-sm rounded p-3 text-center">
+                        <h5 class="mb-2 text-white">Coming Soon</h5>
+                        <p class="mb-0 text-muted">GPA details will be added soon.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-         <style>
-                .experience-card {
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                    cursor: pointer;
-                }
 
-                .experience-card:hover {
-                    transform: scale(1.05);
-                    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-                }
-            </style>
+        <!-- image priview modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-light text-center">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-black ms-auto p-2 p-lg-3 "
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="modalImage" src="" alt="GPA Image" class="img-fluid rounded shadow">
+                        <h5 id="modalTitle" class="text-black mt-3"></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <style>
+        <!-- script -->
+        <script>
+            document.querySelectorAll('.experience-card img').forEach(img => {
+                img.addEventListener('click', function () {
+                    const modalImage = document.getElementById('modalImage');
+                    const modalTitle = document.getElementById('modalTitle');
+
+                    modalImage.src = this.src; // set image
+                    modalTitle.textContent = this.alt; // set title
+
+                    const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+                    modal.show();
+                });
+            });
+        </script>
+
+    </div>
+
+    <!-- <style>
             .experience-card {
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
                 cursor: pointer;
@@ -410,254 +501,299 @@
             }
         </style>
 
+        <style>
+            .experience-card {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                cursor: pointer;
+            }
+
+            .experience-card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+            }
+        </style> -->
+
+    <style>
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+        }
+
+        @media (max-width: 992px) {
+            .skills-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .skill-card {
+            border: 2px solid #ffffff;
+            border-radius: 12px;
+            background: transparent;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .skill-card:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.15);
+        }
+
+        .skill-card i {
+            font-size: 2.5rem;
+        }
+    </style>
 
 
 
-        <!-- about -->
 
+    <section class="content-section py-5" id="about" style="background: #000000;">
+        <div class="container">
+            <!-- Section Title -->
+            <h2 class="section-title text-center mb-5 fw-bold text-white" style="font-family: 'Poppins', sans-serif;">
+                About Me
+            </h2>
 
-        <section class="content-section bg-light py-5" id="about">
-            <div class="container">
-                <h2 class="section-title text-center mb-5"
-                    style="color:#343a40; font-weight:700; font-family:'Poppins', sans-serif;">
-                    About Me
-                </h2>
+            <div class="row align-items-center">
+                <!-- Profile Image -->
+                <div class="col-lg-5 text-center mb-4 mb-lg-0 profile-container">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=774&q=80"
+                        class="rounded-circle shadow-lg img-fluid border border-4 border-white"
+                        alt="SOTHEARO - Developer" style="max-width: 260px;">
+                </div>
 
-                <div class="row align-items-center">
-                    <!-- Profile Image -->
-                    <div class="col-lg-5 text-center mb-4 mb-lg-0">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=774&q=80"
-                            class="rounded-circle shadow-lg img-fluid" alt="SOTHEARO - Developer"
-                            style="max-width: 250px; border: 6px solid #fff; position: relative; top: -20px;">
-                    </div>
+                <!-- About Content -->
+                <div class="col-lg-7">
+                    <h3 class="fw-bold mb-3 text-white" style="font-family: 'Poppins', sans-serif;">
+                        Hello, I'm Sothearo!
+                    </h3>
 
-                    <!-- About Content -->
-                    <div class="col-lg-7">
-                        <h3 class="mb-3" style="color:#212529; font-weight:700; font-family:'Poppins', sans-serif;">
-                            Hello, I'm Sothearo!
-                        </h3>
+                    <p class="mb-3 fs-5 text-white">
+                        I am a <strong>Year 3 student</strong> at <strong>ACLEDA University of Business</strong>
+                        with a passion for creating impactful digital solutions and modern applications.
+                    </p>
 
-                        <p class="text-muted mb-3" style="font-size: 1.05rem; line-height:1.8;">
-                            I am a <strong>Year 3 student</strong> at <strong>ACLEDA University of Business</strong>
-                            with a
-                            passion for
-                            building impactful digital solutions and modern applications.
-                        </p>
+                    <p class="mb-4 fs-6 text-white">
+                        Experienced in developing <strong>Point of Sale (POS) systems</strong> with advanced
+                        reporting, and several academic projects like a <strong>full-stack e-commerce
+                            platform</strong> using
+                        Django.
+                    </p>
 
-                        <p class="text-muted mb-4" style="line-height:1.8;">
-                            I have practical experience in developing <strong>Point of Sale (POS) systems</strong>
-                            with
-                            advanced reporting features
-                            and completed multiple academic projects, including a
-                            <strong>full-stack e-commerce website</strong> using Django.
-                        </p>
+                    <!-- Experience Section -->
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3 text-white" style="font-family: 'Poppins', sans-serif;">
+                            Experience
+                        </h5>
 
-                        <!-- Core Skills -->
-                        <div class="mb-4">
-                            <h5 class="fw-bold mb-3" style="color:#343a40; font-family:'Poppins', sans-serif;">Core
-                                Skills
-                            </h5>
-                            <ul class="list-unstyled text-muted" style="line-height:1.8;">
-                                <li><i class="fas fa-code text-primary me-2"></i> Frontend: HTML, CSS, Bootstrap,
-                                    JavaScript, jQuery</li>
-                                <li><i class="fas fa-mobile-alt text-success me-2"></i> Mobile: Android (Kotlin)
-                                </li>
-                                <li><i class="fas fa-server text-warning me-2"></i> Backend: Django, ASP.NET (C#),
-                                    PHP,
-                                    Java
-                                </li>
-                                <li><i class="fas fa-database text-danger me-2"></i> Databases: SQL Server, MySQL,
-                                    Oracle,
-                                    Firebase</li>
-                            </ul>
-                        </div>
-
-                        <!-- Experience -->
-                        <div class="mb-4">
-                            <h5 class="fw-bold mb-3" style="color:#343a40; font-family:'Poppins', sans-serif;">
-                                Experience
-                            </h5>
-
-                            <p class="text-muted mb-2">
+                        <!-- Experience Items -->
+                        <ul class="list-unstyled">
+                            <li class="mb-2 text-white">
                                 <i class="fas fa-briefcase text-primary me-2"></i>
-                                Intern at ACLEDA School – Built a POS System using C# ASP.NET and SQL Server with
-                                advanced
-                                reporting modules.
-                            </p>
-
-                            <p class="text-muted mb-2">
+                                Intern at ACLEDA School – Built a <strong>POS System</strong> using C# ASP.NET Core
+                                MVC with Bootstrap and
+                                Jquery SQL Server with reporting modules.
+                                <a href="https://github.com/VathanaProgrammer/Intern_pos_project.git" target="_blank"
+                                    class="btn btn-outline-light btn-sm ms-2">
+                                    <i class="fab fa-github me-1"></i> GitHub
+                                </a>
+                            </li>
+                            <li class="mb-2 text-white">
                                 <i class="fas fa-laptop-code text-success me-2"></i>
-                                Developed a full-stack E-commerce website using Django, featuring cart, checkout,
-                                and QR
-                                code payment integration.
-                            </p>
+                                Developed a full-stack <strong>E-commerce Website</strong> using Django with QR code
+                                payment integration.
+                                <a href="https://korngsothearo.pythonanywhere.com/" target="_blank"
+                                    class="btn btn-outline-light btn-sm ms-2">
+                                    <i class="fas fa-globe me-1"></i> Live Demo
+                                </a>
+                            </li>
 
-                            <p class="text-muted mb-2">
+                            <li class="mb-2 text-white">
                                 <i class="fas fa-mobile-alt text-warning me-2"></i>
-                                Built an Android application called <strong>Career App</strong> using Kotlin and
-                                Firebase,
-                                enabling users to find jobs and companies to post vacancies with admin control.
-                            </p>
-                        </div>
-
-
-                        <p class="text-muted" style="line-height:1.8;">
-                            Currently, I’m focused on advanced Django development, REST API design, and building
-                            scalable,
-                            secure web systems.
-                        </p>
+                                Created an Android app called <strong>Career App</strong> using Kotlin & Firebase
+                                for job search and vacancy posting.
+                                <a href="https://github.com/KorngSothearo7198/Mobile_Android_Project.git"
+                                    target="_blank" class="btn btn-outline-light btn-sm ms-2">
+                                    <i class="fab fa-github me-1"></i> GitHub
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+
+                    <p class="text-white fs-6">
+                        Currently, I’m focusing on <strong>Flutter development</strong>,
+                        building cross-platform mobile apps with
+                        beautiful UIs and seamless performance, along with modern API integration for real-time
+                        features.
+                    </p>
+
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
 
 
 
 
-        <!-- project and experinces -->
 
 
-        <section class="content-section py-5" id="experiences" style="background: #f8f9fa;">
-            <div class="container">
-                <h2 class="section-title mb-5" style="color: #343a40;">Experiences & Projects</h2>
+    <!-- project and experinces -->
 
-                <div class="row g-4">
-                    <!-- POS Systems -->
-                    <div class="col-md-4">
-                        <div class="experience-card bg-white shadow-sm rounded p-4">
-                            <i class="fas fa-cash-register fa-3x text-primary mb-3"></i>
-                            <h5 class="mb-2 text-dark">POS Systems (ACLEDA School Internship)</h5>
-                            <p class="mb-2 text-muted">
-                                Developed a <strong>Point of Sale (POS)</strong> system with advanced reporting
-                                features
-                                during an internship at <strong>ACLEDA School</strong>.
+
+    <section class="content-section py-5" id="experiences" style="background: #000000;">
+        <div class="container">
+            <h2 class="section-title text-center mb-5"
+                style="color: #ffffff; font-weight: 700; font-family: 'Poppins', sans-serif;">
+                Experiences & Projects
+            </h2>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Maintenance & Tech -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="experience-card rounded p-4 border h-100 d-flex flex-column align-items-center">
+                        <i class="fas fa-tools fa-3x text-primary mb-3"></i>
+                        <h5 class="fw-bold text-center mb-3" style="color: #ffffff;">Maintenance & Technologies</h5>
+                        <div class="text-start w-100">
+                            <p style="color: #cccccc; font-size: 0.95rem;">
+                                Maintaining academic projects and applying multiple technologies across domains.
                             </p>
-                            <p class="mb-0 text-muted">
-                                <strong>Technologies:</strong> C# (ASP.NET), SQL Server, Bootstrap.
-                            </p>
-                            <a href="https://github.com/VathanaProgrammer/Intern_pos_project.git" target="_blank"
-                                class="experience-link text-decoration-underline text-primary">
-                                View Site
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Ecommus Website -->
-                    <div class="col-md-4">
-                        <div class="experience-card bg-white shadow-sm rounded p-4">
-                            <i class="fas fa-laptop-code fa-3x text-success mb-3"></i>
-                            <h5 class="mb-2 text-dark">Ecommus Website (School Project)</h5>
-                            <p class="mb-2 text-muted">
-                                Full-stack <strong>e-commerce website</strong> with product listing, shopping cart,
-                                checkout, and QR payment integration.
-                            </p>
-                            <p class="mb-0 text-muted">
-                                <strong>Technologies:</strong> Python (Django), HTML, CSS, JavaScript, Bootstrap.
-                            </p>
-                            <a href="https://korngsothearo.pythonanywhere.com/" target="_blank"
-                                class="experience-link text-decoration-underline text-primary">
-                                View Site
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Maintenance & Tech -->
-                    <div class="col-md-4">
-                        <div class="experience-card bg-white shadow-sm rounded p-4">
-                            <i class="fas fa-tools fa-3x text-danger mb-3"></i>
-                            <h5 class="mb-2 text-dark">Maintenance & Technologies</h5>
-                            <p class="mb-2 text-muted">
-                                Worked on maintaining school projects and applying multiple technologies across
-                                different domains.
-                            </p>
-                            <p class="mb-0 text-muted">
-                                <strong>Skills & Technologies:</strong> C#, Java, Django, Android (Kotlin), ASP.NET,
-                                HTML, CSS, Bootstrap, JavaScript, jQuery, Firebase, SQL Server, MySQL, Oracle, PHP.
+                            <p style="color: #cccccc; font-size: 0.9rem;">
+                                <strong>Skills:</strong> C#, Java, Django, Android (Kotlin), ASP.NET, HTML, CSS,
+                                Bootstrap, JavaScript, Firebase, SQL Server, MySQL, Oracle, PHP.
                             </p>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Learning & Projects -->
-                    <div class="col-md-4">
-                        <div class="experience-card bg-white shadow-sm rounded p-4">
-                            <i class="fas fa-lightbulb fa-3x text-warning mb-3"></i>
-                            <h5 class="mb-2 text-dark">Learning & Projects</h5>
-                            <p class="mb-2 text-muted">
-                                Continuously improving skills by exploring modern technologies and frameworks.
+                <!-- Learning & Projects -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="experience-card rounded p-4 border h-100 d-flex flex-column align-items-center">
+                        <i class="fas fa-lightbulb fa-3x text-warning mb-3"></i>
+                        <h5 class="fw-bold text-center mb-3" style="color: #ffffff;">Learning & Projects</h5>
+                        <div class="text-start w-100">
+                            <p style="color: #cccccc; font-size: 0.95rem;">
+                                Continuously improving skills by exploring modern frameworks and technologies.
                             </p>
-                            <p class="mb-0 text-muted">
-                                Focused on building innovative projects and applying best practices to solve
-                                real-world
+                            <p style="color: #cccccc; font-size: 0.9rem;">
+                                Focused on building innovative solutions and applying best practices for real-world
                                 challenges.
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <style>
-            .experience-card {
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-                cursor: pointer;
-            }
-
-            .experience-card:hover {
-                transform: scale(1.05);
-                box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-            }
-
-            .experience-card i {
-                transition: transform 0.3s ease;
-            }
-
-            .experience-card:hover i {
-                transform: scale(1.2);
-            }
-        </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Footer -->
-        <footer class="bg-dark text-light py-4">
-            <div class="container text-center">
-                <div class="social-links mb-3">
-                    <a href="https://github.com/KorngSothearo7198?tab=repositories" target="_blank"
-                        class="text-light mx-2" style="font-size: 1.5rem;">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=61577712952201" target="_blank"
-                        class="text-light mx-2" style="font-size: 1.5rem;">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://t.me/yourtelegram" target="_blank" class="text-light mx-2"
-                        style="font-size: 1.5rem;">
-                        <i class="fab fa-telegram"></i>
-                    </a>
-                    <a href="https://www.tiktok.com/@rocoder_kh" target="_blank" class="text-light mx-2"
-                        style="font-size: 1.5rem;">
-                        <i class="fab fa-tiktok"></i>
-                    </a>
+                <!-- Flutter Development -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="experience-card rounded p-4 border h-100 d-flex flex-column align-items-center">
+                        <i class="devicon-flutter-plain colored fa-3x mb-3"></i>
+                        <h5 class="fw-bold text-center mb-3" style="color: #ffffff;">Mobile Development (Flutter)
+                        </h5>
+                        <div class="text-start w-100">
+                            <p style="color: #cccccc; font-size: 0.95rem;">
+                                Building cross-platform apps with clean UI and smooth performance.
+                            </p>
+                            <p style="color: #cccccc; font-size: 0.9rem;">
+                                <strong>Skills:</strong> Flutter, Dart, REST API integration, Firebase, State
+                                Management.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <p class="mb-0">&copy; 2023 <strong>SOTHEARO</strong>. All rights reserved.</p>
+
+                <!-- Android Development -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="experience-card rounded p-4 border h-100 d-flex flex-column align-items-center">
+                        <i class="fab fa-android fa-3x text-success mb-3"></i>
+                        <h5 class="fw-bold text-center mb-3" style="color: #ffffff;">Android Development</h5>
+                        <div class="text-start w-100">
+                            <p style="color: #cccccc; font-size: 0.95rem;">
+                                Built Android apps using <strong>Kotlin</strong> and <strong>Firebase</strong>
+                                (Realtime DB, Storage, Auth).
+                            </p>
+                            <p style="color: #cccccc; font-size: 0.9rem;">
+                                <strong>Skills:</strong> Kotlin, Firebase Realtime Database, Storage, Auth, Material
+                                Design.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </div>
+    </section>
+
+    <style>
+        .experience-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #111111;
+            /* dark card background */
+            border: 1px solid #333333;
+            /* subtle border for dark mode */
+            color: #ffffff;
+            /* default text color */
+        }
+
+        .experience-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .experience-card i {
+            display: block;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+        }
+    </style>
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    </body>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <div class="social-links mb-3">
+                <a href="https://github.com/KorngSothearo7198?tab=repositories" target="_blank" class="text-light mx-2"
+                    style="font-size: 1.5rem;">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61577712952201" target="_blank" class="text-light mx-2"
+                    style="font-size: 1.5rem;">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://t.me/yourtelegram" target="_blank" class="text-light mx-2" style="font-size: 1.5rem;">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@rocoder_kh" target="_blank" class="text-light mx-2"
+                    style="font-size: 1.5rem;">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+            <p class="mb-0">&copy; 2023 <strong>SOTHEARO</strong>. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 
 </html>
